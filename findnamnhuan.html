@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nam: <input placeholder="Nhap nam" id="sonam">
+<button onclick="Show()">Show</button>
+
+</body>
+</html>
+<script>
+    function Show() {
+        let year;
+        year = document.getElementById("sonam").value;
+        if (year % 4 === 0) {
+            if (year % 100 === 0 && year % 400 !== 0) {
+                alert(year+  " ko la nam nhuan");
+            } else {
+                alert(year+ " co la nam nhuan");
+            }
+        } else {
+            alert(year + 'khong la nam nhuan');
+        }
+    }
+</script>
