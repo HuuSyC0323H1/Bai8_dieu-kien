@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>KetQua:<span id="ketqua"></span></h2>
+</body>
+</html>
+<script>
+  let messenger;
+  let login = prompt('Enter', '');
+  messenger = (login === 'Employee')?"Hello":(login === 'Director')?"Greeting":(login === '')?"No login":"";
+  document.getElementById('ketqua').innerText=messenger;
+</script>
